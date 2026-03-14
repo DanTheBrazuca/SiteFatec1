@@ -1,13 +1,132 @@
 * {
-    width: auto;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+	padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-h1 {
-    color: navy;
+.header1, .header2 {
+	display: flex;
+	justify-content: space-between;
+}
+.header2 {
+	padding: 20px;
+	align-items: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+#headerIcones {
+	display: flex;
+  align-items: center;
+}
+.imgHeader{
+	width: 25px;
+	height: 25px;
+	margin: 3px;
+}
+#divEsquerda {
+	padding: 20px;
+	background-color: black;
+	height: 100%;
+	border-radius: 0 40px 40px 0;
+	padding-left: 70px;
+}
+#divDireita {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+}
+.circulo, .triangulo {
+	border: solid black 1px;
+	border-radius: 15px;
+}
+.circulo {
+	height: 27px;
+	width: 27px;
+	align-content: center;
+	margin: 3px;
+}
+.triangulo {
+	width: 27px;
+	height: 27px;
+	border-left: 20px;
+	border-right: 20px;
+	border-bottom: 100px;
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+#imgLogo {
+	width: 330px;
+	height: 80px;
+}
+form, input {
+	border: none;
+	background-color: white;
+}
+.pesquisa1, .pesquisa2 {
+	border: solid gray 1px;
+	border-radius: 30px;
+	padding: 10px;
+	right: 60px;
+}
+.pesquisa1 {
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	text-align: left;
+	padding-right: 20px;
+	width: 300px;
+}
+.pesquisa2 {
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: darkred;
+	height: 60px;
+}
+#menu {
+  color: white;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+#headerAMS {
+  color: navy;
+  text-align: left;
+}
+#text {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  padding: 20px;
+}
+#horario {
+	width: 100%;
+}
+#imgHorario {
+	width: 100px;
 }
 table, tr, th, td {
   border: 1px solid black;
   text-align: center;
   font-size: small;
   margin: 0 auto;
+  width: 100%;
+}
+td {
+  width: 200px;
+}
+.green {
+  background-color: lightgreen;
+  min-width: 100px; 
+  width: 200px;
+}
+.semana {
+  background-color:black;
+  color: white;
+}
+a:hover {
+  color: cornflowerblue;
 }
