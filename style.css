@@ -79,20 +79,27 @@ form, input {
 	border-bottom-left-radius: 0;
 	border-top-left-radius: 0;
 }
-nav {
+#nav1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: darkred;
 	height: 60px;
 }
-#menu {
+.menu {
   color: white;
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
   gap: 20px;
+}
+#nav2 {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: grey;
+	height: 60px;
 }
 #headerAMS {
   color: navy;
@@ -102,12 +109,23 @@ nav {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-  padding: 20px;
+  	padding: 20px;
 }
-#horario {
-	width: 100%;
+.container {
+	display: flex;
+	flex-direction: row;
 }
-#imgHorario {
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.item {
+	flex: 1;
+  	padding: 10px;
+  	text-align: center;
+}
+.imgText {
 	width: 100px;
 }
 table, tr, th, td {
