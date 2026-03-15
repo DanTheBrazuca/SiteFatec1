@@ -29,7 +29,7 @@
 	border-radius: 0 40px 40px 0;
 	padding-left: 70px;
 }
-#divDireita {
+.divDireita {
 	padding: 20px;
 	display: flex;
 	align-items: center;
@@ -41,8 +41,10 @@
 .circulo {
 	height: 27px;
 	width: 27px;
-	align-content: center;
 	margin: 3px;
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
 }
 .triangulo {
 	width: 27px;
