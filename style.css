@@ -1,27 +1,33 @@
 * {
-  	margin: 0;
+	margin: 0;
 	padding: 0;
-  	font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
-.header1, .header2 {
+
+.header1,
+.header2 {
 	display: flex;
 	justify-content: space-between;
 }
+
 .header2 {
 	padding: 20px;
 	align-items: center;
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
+
 #headerIcones {
 	display: flex;
-  align-items: center;
+	align-items: center;
 }
-.imgHeader{
+
+.imgHeader {
 	width: 25px;
 	height: 25px;
 	margin: 3px;
 }
+
 #divEsquerda {
 	padding: 20px;
 	background-color: black;
@@ -29,23 +35,30 @@
 	border-radius: 0 40px 40px 0;
 	padding-left: 70px;
 }
+
 .divDireita {
 	padding: 20px;
 	display: flex;
 	align-items: center;
 }
-.circulo, .triangulo {
+
+.circulo,
+.triangulo {
 	border: solid black 1px;
 	border-radius: 15px;
+	cursor: pointer;
 }
+
 .circulo {
 	height: 27px;
 	width: 27px;
 	margin: 3px;
-	display: flex; 
-	align-items: center; 
+	display: flex;
+	align-items: center;
 	justify-content: center;
+	user-select: none;
 }
+
 .triangulo {
 	width: 27px;
 	height: 27px;
@@ -54,20 +67,59 @@
 	border-bottom: 100px;
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
+
+body.dark-theme {
+	background-color: #121212;
+	color: #e3e3e3;
+}
+
+body.dark-theme .header1,
+body.dark-theme .header2,
+body.dark-theme #nav1,
+body.dark-theme #nav2 {
+	background-color: #1f1f1f;
+	color: #e3e3e3;
+}
+
+body.dark-theme .menu li {
+	color: #e3e3e3;
+}
+
+body.dark-theme .pesquisa1,
+body.dark-theme .pesquisa2,
+body.dark-theme .container .item,
+body.dark-theme #text {
+	background-color: #1a1a1a;
+	color: #e3e3e3;
+}
+
+body.dark-theme a {
+	color: #9ec5ff;
+}
+
+body.dark-theme a:hover {
+	color: #ffd47e;
+}
+
 #imgLogo {
 	width: 330px;
 	height: 80px;
 }
-form, input {
+
+form,
+input {
 	border: none;
 	background-color: white;
 }
-.pesquisa1, .pesquisa2 {
+
+.pesquisa1,
+.pesquisa2 {
 	border: solid gray 1px;
 	border-radius: 30px;
 	padding: 10px;
 	right: 60px;
 }
+
 .pesquisa1 {
 	border-bottom-right-radius: 0;
 	border-top-right-radius: 0;
@@ -75,10 +127,12 @@ form, input {
 	padding-right: 20px;
 	width: 300px;
 }
+
 .pesquisa2 {
 	border-bottom-left-radius: 0;
 	border-top-left-radius: 0;
 }
+
 #nav1 {
 	display: flex;
 	justify-content: center;
@@ -86,67 +140,83 @@ form, input {
 	background-color: darkred;
 	height: 60px;
 }
+
 .menu {
-  color: white;
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  gap: 20px;
+	color: white;
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	gap: 20px;
 }
+
 #nav2 {
-  display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: grey;
 	height: 60px;
 }
+
 #headerAMS {
-  color: navy;
-  text-align: left;
+	color: navy;
+	text-align: left;
 }
+
 #text {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-  	padding: 20px;
+	padding: 20px;
 }
+
 .container {
 	display: flex;
 	flex-direction: row;
 }
+
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+	.container {
+		flex-direction: column;
+	}
 }
+
 .item {
 	flex: 1;
-  	padding: 10px;
-  	text-align: center;
+	padding: 10px;
+	text-align: center;
 }
+
 .imgText {
 	width: 100px;
 }
-table, tr, th, td {
-  border: 1px solid black;
-  text-align: center;
-  font-size: small;
-  margin: 0 auto;
-  width: 100%;
-}
+
+table,
+tr,
+th,
 td {
-  width: 200px;
+	border: 1px solid black;
+	text-align: center;
+	font-size: small;
+	margin: 0 auto;
+	width: 100%;
 }
+
+td {
+	width: 200px;
+}
+
 .green {
-  background-color: lightgreen;
-  min-width: 100px; 
-  width: 200px;
+	background-color: lightgreen;
+	min-width: 100px;
+	width: 200px;
 }
+
 .semana {
-  background-color:black;
-  color: white;
+	background-color: black;
+	color: white;
 }
+
 a:hover {
-  color: cornflowerblue;
+	color: cornflowerblue;
 }
